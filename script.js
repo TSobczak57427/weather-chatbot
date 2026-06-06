@@ -47,7 +47,7 @@ async function sendMessage() {
     setTimeout(async () => {
         const response = await generateBotResponse(text);
         hideTyping();
-        addMessage(response, "bot-message");
+        addTypingMessage(response, "bot-message");
     }, 700);
 }
 
@@ -60,6 +60,29 @@ function addMessage(message, sender) {
     chatBox.appendChild(messageElement);
     scrollToBottom();
     saveChatHistory();
+}
+
+function addTypingMessage(message, sender) {
+    const messageElement = document.createElement("div");
+
+    messageElement.classList.add("message", sender);
+    chatBox.appendChild(messageElement);
+
+    let index = 0;
+
+    const typingSpeed = 10;
+
+    const typingInterval = setInterval(() => {
+        messageElement.innerText += message.charAt(index);
+        index++;
+
+        scrollToBottom();
+
+        if (index >= message.length) {
+            clearInterval(typingInterval);
+            saveChatHistory();
+        }
+    }, typingSpeed);
 }
 
 async function generateBotResponse(userText) {
