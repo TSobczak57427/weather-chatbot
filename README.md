@@ -41,5 +41,8 @@ Jest 7 stopni i pada deszcz
 
 ## Uwagi
 
--Do działania integracji z OpenWeather wymagany jest aktywny klucz API. Po utworzeniu konta i subskrypcji darmowego planu aktywacja klucza może potrwać do kilku godzin.
--W projekcie demonstracyjnym klucz API znajduje się w pliku JavaScript. W środowisku produkcyjnym powinien być przechowywany po stronie backendu, aby nie był publicznie widoczny.
+Do działania integracji z OpenWeather wymagany jest własny klucz API.
+
+Ze względów bezpieczeństwa klucz API nie został umieszczony w repozytorium. Aby uruchomić integrację lokalnie, należy wpisać własny klucz w pliku `script.js` w zmiennej `OPENWEATHER_API_KEY`.
+
+W środowisku produkcyjnym klucz API powinien być obsługiwany po stronie backendu, a nie bezpośrednio w kodzie frontendowym.
