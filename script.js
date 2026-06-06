@@ -69,11 +69,10 @@ function addTypingMessage(message, sender) {
     chatBox.appendChild(messageElement);
 
     let index = 0;
-
     const typingSpeed = 10;
 
     const typingInterval = setInterval(() => {
-        messageElement.innerText += message.charAt(index);
+        messageElement.textContent += message.charAt(index);
         index++;
 
         scrollToBottom();
