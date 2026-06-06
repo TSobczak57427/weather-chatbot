@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page-wrapper">
+        <section class="hero">
+            <p class="badge">AI Weather Assistant</p>
+            <h1>Bot doradzający ubiór do pogody</h1>
+            <p class="subtitle">
+                Napisz, jaka jest pogoda, a bot zaproponuje odpowiedni strój, dodatki i ochronę przed zimnem lub deszczem.
+            </p>
+        </section>
+
+        <section class="chat-container" aria-label="Okno czatu z asystentem pogodowym">
+            <header class="chat-header">
+                <div class="bot-avatar">☁️</div>
+                <div>
+                    <h2>Weather AI Assistant</h2>
+                    <p>Online · gotowy do pomocy</p>
+                </div>
+
+                <button id="theme-toggle" class="theme-button" aria-label="Przełącz tryb ciemny">
+                    🌙
+                </button>
+            </header>
+
+            <div id="chat-box" class="chat-box" aria-live="polite"></div>
+
+            <div id="typing-indicator" class="typing-indicator hidden">
+                Bot pisze...
+            </div>
+
+            <form id="chat-form" class="chat-input">
+                <input 
+                    type="text" 
+                    id="user-input" 
+                    placeholder="Np. Jest 7 stopni i pada deszcz"
+                    aria-label="Wpisz wiadomość"
+                    autocomplete="off"
+                >
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
