@@ -31,8 +31,6 @@ Weather AI Assistant to prosty chatbot webowy, który doradza użytkownikowi odp
 - Obsługa zapytań typu „pogoda Bydgoszcz”
 - Obsługa błędów API, np. niepoprawne miasto lub błędny klucz API
 
-## Architektura
-
 ## Architektura rozwiązania
 
 ```text
