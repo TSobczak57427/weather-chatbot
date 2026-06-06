@@ -61,5 +61,5 @@ W środowisku produkcyjnym klucz API powinien być obsługiwany po stronie backe
 ## Screenshots
 
 ![Przykładowe zapytanie](image-2.png)
-![Pogoda Pydgoszcz]](image.png)
+![Pogoda Pydgoszcz](image.png)
 ![light mode](image-1.png)
