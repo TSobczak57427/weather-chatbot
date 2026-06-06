@@ -36,8 +36,19 @@ Weather AI Assistant to prosty chatbot webowy, który doradza użytkownikowi odp
 Użytkownik:
 
 ```text
-Jest 7 stopni i pada deszcz
+- Jest 7 stopni i pada deszcz
+
+- Temperatura: 7°C.
+
+Załóż ciepłą kurtkę, bluzę lub sweter oraz długie spodnie.
+
+Ponieważ pada deszcz, zabierz parasol lub załóż kurtkę przeciwdeszczową i wodoodporne buty.
+
+Dobrym dodatkiem będzie cienka czapka albo komin.
+
+Styl: casualowy zestaw będzie odpowiedni na co dzień.
 ```
+
 
 ## Uwagi
 
@@ -46,3 +57,9 @@ Do działania integracji z OpenWeather wymagany jest własny klucz API.
 Ze względów bezpieczeństwa klucz API nie został umieszczony w repozytorium. Aby uruchomić integrację lokalnie, należy wpisać własny klucz w pliku `script.js` w zmiennej `OPENWEATHER_API_KEY`.
 
 W środowisku produkcyjnym klucz API powinien być obsługiwany po stronie backendu, a nie bezpośrednio w kodzie frontendowym.
+
+## Screenshots
+
+![Przykładowe zapytanie](image-2.png)
+![Pogoda Pydgoszcz]](image.png)
+![light mode](image-1.png)
